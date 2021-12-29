@@ -1,0 +1,130 @@
+:root 
+{
+  --body: rgb(8, 7, 7);
+  --font: rgb(15, 14, 14);
+  --border: rgb(51, 51, 51);
+  --screen: rgb(199, 43, 43);
+  --calculator: rgb(170, 170, 170);
+  --btn: rgb(238, 238, 238);
+  --btn-hover: rgb(221, 221, 221);
+  --btn-active: rgb(204, 204, 204);
+  --btn-red: rgb(255, 170, 170);
+  --btn-red-hover: rgb(238, 153, 153);
+  --btn-red-active: rgb(221, 136, 136);
+  --btn-blue: rgb(170, 170, 255);
+  --btn-blue-hover: rgb(12, 12, 12);
+  --btn-blue-active: rgb(136, 136, 221);
+}
+
+*,
+*::before,
+*::after 
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body 
+{
+  background-color: var(--body);
+  color: var(--font);
+  font-family: "Roboto", sans-serif;
+  background-image: url("homeimg.jpg");
+}
+
+button 
+{
+  color: inherit;
+}
+
+.calculator 
+{
+  max-width: 300px;
+  border: 2px var(--border) solid;
+  border-radius: 15px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--calculator);
+}
+
+.screen 
+{
+  min-height: 80px;
+  padding: 20px;
+  border: 2px var(--border) solid;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: var(--screen);
+  font-size: 29px;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.buttons-grid 
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.span-2 
+{
+  grid-column: span 2;
+}
+
+.btn 
+{
+  padding: 20px;
+  border: 2px var(--border) solid;
+  border-radius: 5px;
+  background-color: var(--btn);
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover 
+{
+  background-color: var(--btn-hover);
+}
+
+.btn:active 
+{
+  background-color: var(--btn-active);
+}
+
+.btn-red 
+{
+  background-color: var(--btn-red);
+}
+
+.btn-red:hover 
+{
+  background-color: var(--btn-red-hover);
+}
+.btn-red:active 
+{
+  background-color: var(--btn-red-active);
+}
+.btn-blue 
+{
+  background-color: var(--btn-blue);
+}
+
+.btn-blue:hover 
+{
+  background-color: var(--btn-blue-hover);
+}
+
+.btn-blue:active 
+{
+  background-color: var(--btn-blue-active);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button 
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
